@@ -1,0 +1,47 @@
+{% extends 'Demo/base.html' %}
+{% load static %}
+{% block extrahead %}
+
+{% endblock %}
+{% block extrastyles %}
+{% endblock %}
+
+{% block body %}
+    <section class="container" >
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <br>
+                <h2 style="color: white">Confirmar compra</h2>
+                <div class='checkout'>
+                    <form action="{{url_izipay}}" method="POST">
+                        {% csrf_token %}
+                        <input type="hidden" name="vads_action_mode" value="{{redirect.vads_action_mode}}"/>
+                        <input type="hidden" name="vads_amount" value="{{redirect.vads_amount}}" />
+                        <input type="hidden" name="vads_ctx_mode" value="{{redirect.vads_ctx_mode}}" />
+                        <input type="hidden" name="vads_currency" value="{{redirect.vads_currency}}" />
+                        <input type="hidden" name="vads_cust_email" value="{{redirect.vads_cust_email}}" />
+                        <input type="hidden" name="vads_page_action" value="{{redirect.vads_page_action}}" />
+                        <input type="hidden" name="vads_payment_config" value="{{redirect.vads_payment_config}}" />
+                        <input type="hidden" name="vads_site_id" value="{{redirect.vads_site_id}}" />
+                        <input type="hidden" name="vads_trans_date" value="{{redirect.vads_trans_date}}" />
+                        <input type="hidden" name="vads_trans_id" value="{{redirect.vads_trans_id}}" />
+                        <input type="hidden" name="vads_version" value="{{redirect.vads_version}}" />
+                        <input type="hidden" name="vads_order_id" value="{{redirect.vads_order_id}}" />
+                        <input type="hidden" name="vads_url_success" value="{{redirect.vads_url_success}}" />
+                        <input type="hidden" name="vads_return_mode" value="{{redirect.vads_return_mode}}" />
+                        <input type="hidden" name="vads_redirect_success_timeout" value="{{redirect.vads_redirect_success_timeout}}" />
+                        <input type="hidden" name="signature" value="{{signature}}" />
+                        <button class="btn btn-primary" type="submit">Realizar Pago</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+  </section>
+{% endblock %}
+
+{% block extrajs %}
+    <script>
+    </script>
+{% endblock %}

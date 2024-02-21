@@ -1,0 +1,38 @@
+{% extends 'Demo/base.html' %}
+{% load static %}
+
+{% block extrahead %}
+{% endblock %}
+{% block extrastyles %}
+{% endblock %}
+
+{% block body %}
+<section class="container" >
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <h1>Resultado de pago</h1>
+
+        {% if result == '00' %}
+              <p>Estado: {{ status }}</p>
+              <p>Monto: S/. {{ monto |floatformat:2 }}</p>
+              <p>ID Orden:  {{ order }}</p>
+        {% else %}
+              <p>Estado:  {{ status }}</p>
+              <p>Codigo: {{ result }}</p>
+        {% endif %}
+          <form action="/" method="get">
+            <button class="btn btn-primary">
+                Volver a probar
+            </button>
+          </form>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block extrajs %}
+    <script>
+    </script>
+{% endblock %}

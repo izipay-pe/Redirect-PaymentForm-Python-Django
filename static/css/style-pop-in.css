@@ -1,0 +1,118 @@
+/** manejo de tamaño del banner de tarjetas **/
+#payment > ul > li.wc_payment_method.payment_method_micuentawebstd > label > img{
+	max-width: 200px !important;
+	max-height: 100px !important;
+}
+
+/**LOGO HEADER**/
+#micuentawebstd_rest_wrapper > div.kr-popin-wrapper > div > div.kr-popin-modal-header > div.kr-popin-modal-header-image > img{display:none}
+
+#micuentawebstd_rest_wrapper > div.kr-popin-wrapper > div > div.kr-popin-modal-header > div.kr-popin-modal-header-image > div.kr-header-logo{display:none}
+
+#micuentawebstd_rest_wrapper > div.kr-popin-wrapper > div > div.kr-popin-modal-header > div.kr-popin-modal-header-image > div.kr-header-logo-shadow{display:none}
+
+#micuentawebstd_rest_wrapper > div.kr-popin-wrapper > div > div.kr-popin-modal-header > div.kr-popin-modal-header-image > div.kr-header-border{display:none}
+
+#micuentawebstd_rest_wrapper > div.kr-popin-wrapper > div > div.kr-popin-modal-header > div.kr-popin-modal-header-image > div.kr-header-border-shadow
+{
+content:url("https://raw.githubusercontent.com/izipay-pe/Popin-Imagenes/main/logo-cabecera-200x200.png");
+margin-top: -18px !important;
+transform: scale(1.5);
+}
+
+/**Logo footer**/
+.kr-embedded[kr-popin].kr-help-button-inner-field .kr-popin-modal-footer .kr-whitelabel-logo img {  border-radius: 4px !important;
+	content: url("https://raw.githubusercontent.com/izipay-pe/Popin-Imagenes/main/logo%20color%20principal.png"); max-height: 100% !important;margin-right: 30px !important}
+
+.kr-embedded{
+/* 	height: 460px; */
+	border-radius:5px;
+	justify-content: space-between !important;
+}
+.kr-popin-modal-header{
+	border-bottom: 0px !important;
+	border-radius:10px !important;
+}
+.kr-popin-modal-header-background{
+	background-color: #ffffff !important;
+	border-radius: 10px !important;
+}
+.kr-popin-shop-name{
+	border-bottom:solid 1px #2AD2C9 !important;
+  	width:80% !important;
+  	padding-bottom: 7.5px !important;
+	margin-top:60px !important;
+}
+/* Field styles */
+.kr-pan, .kr-expiry, .kr-security-code, .kr-installment-number , .kr-first-installment-delay{
+	height: 45px !important;
+	display:flex !important;
+	align-items: center !important;
+	margin-bottom: 5px !important;
+}
+
+/** cabecera**/
+.kr-field-wrapper{
+	margin-top: 3px !important;
+}
+
+.kr-field-wrapper.kr-select-wrapper.kr-real-select{
+	height:31.7px !important;
+}
+.kr-field-element.kr-expiry.kr-size-half{
+	width:52% !important;
+	margin-right: 0px !important;
+}
+.kr-field-element.kr-security-code.kr-size-half{
+	width: 46% !important;
+}
+/* Button */
+.kr-embedded .kr-payment-button {
+  	color: #ffffff !important;
+    background-color: #00A09D !important;
+    border-radius: 4px !important;
+    height:55px !important;
+	margin-bottom: 0px !important;
+}
+
+.kr-embedded .kr-payment-button span:hover{
+	transition-duration: 0.2s;
+	font-size: large;
+	text-shadow: -0.5px -0.5px 0.5px #000, 0.5px 0.5px 0.5px #000, -0.5px 0.5px 0.5px #000, 0.5px -0.5px 0.5px #000;
+}
+
+.kr-embedded .kr-payment-button:hover {
+	background-color: #3DD2CE !important;
+    border-radius: 4px !important;
+    color: #ffffff !important;
+}
+.kr-popin-modal-footer div img{
+	margin-right: 28px !important;
+}
+
+/**footer **/
+.kr-embedded[kr-popin], div.kr-popin-modal-footer{
+	border-radius: 10px !important;
+}
+
+/**body**/
+.kr-pan{
+	margin-top: -5px !important;
+  	border-radius: 4px !important;
+}
+
+.kr-expiry{
+  border-radius: 4px !important;
+}
+
+.kr-security-code{
+ 	border-radius: 4px !important;
+}
+
+.kr-installment-number{
+ 	border-radius: 4px !important;
+}
+
+.kr-first-installment-delay{
+	border-radius: 4px !important;
+}

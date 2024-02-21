@@ -1,0 +1,361 @@
+/** manejo de tamaño del banner de tarjetas **/
+#payment>ul>li.wc_payment_method.payment_method_micuentawebstd>label>img {
+	max-width: 100px !important;
+	max-height: 200px !important;
+}
+
+/*** maneja la posicion vertical de las etiquetas ***/
+.kr-field-wrapper {
+	margin-top: 6px !important;
+	margin-left: 10px !important;
+}
+
+/*** Número de tarjeta ***/
+.kr-pan {
+	margin-top: 14px !important;
+	height: 45px !important;
+	border-radius: 4px !important;
+}
+
+/*** Fecha de tarjeta ***/
+.kr-expiry {
+	height: 45px !important;
+	border-radius: 4px !important;
+	max-width: 100% !important;
+}
+
+/*** Codigo CVV ***/
+.kr-security-code {
+	height: 45px !important;
+	border-radius: 4px !important;
+	max-width: 100% !important;
+}
+
+/*** Cuotas ***/
+.kr-installment-number {
+	border-radius: 4px !important;
+	height: 45px !important;
+}
+
+/*** Pago diferido ***/
+.kr-first-installment-delay {
+	border-radius: 4px !important;
+	height: 45px !important;
+}
+
+/*** Maneja la caja donde se visualiza el formulario y logo ***/
+#payment>ul>li.wc_payment_method.payment_method_micuentawebstd>div {
+	background-color: #fff !important;
+	background-repeat: no-repeat;
+	background-position: center top 15px;
+	background-size: 160px;
+	background-image: url("https://raw.githubusercontent.com/izipay-pe/Popin-Imagenes/main/logo%20color%20principal.png") !important;
+	border-radius: 6px;
+	box-shadow: 0px 10px 25px rgba(92, 99, 105, .2);
+	border: 1px solid #b3b6b5 !important;
+	margin-left: 28px !important;
+	margin-top: 25px !important;
+	padding: 20px !important;
+	height: 520px;
+	width: 355px;
+	padding: 25px !important;
+}
+
+/*** Maneja la caja del formulario de pago ***/
+.kr-embedded {
+	width: 300px !important;
+	background-color: #fff !important;
+	border-radius: 6px;
+	border: 1px solid #b3b6b5 !important;
+	margin-top: 60px !important;
+	box-shadow: 0px 10px 25px rgba(92, 99, 105, .2);
+	padding: 20px !important;
+}
+
+/*** Maneja la relacion de espacios ***/
+#micuentawebstd_rest_wrapper>div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+@media (max-width: 460px) {
+
+	/** manejo de tamaño del banner de tarjetas **/
+	#payment>ul>li.wc_payment_method.payment_method_micuentawebstd>label>img {
+		max-width: 100px !important;
+		max-height: 200px !important;
+	}
+
+	/*** maneja la posicion vertical de las etiquetas ***/
+	.kr-field-wrapper {
+		margin-top: 6px !important;
+		margin-left: 10px !important;
+	}
+
+	/*** cuerpo del formulario ***/
+	.kr-pan {
+		margin-top: 14px !important;
+		height: 45px !important;
+		border-radius: 4px !important;
+	}
+
+	.kr-expiry {
+		height: 45px !important;
+		border-radius: 4px !important;
+		max-width: 49% !important;
+	}
+
+	.kr-security-code {
+		height: 45px !important;
+		border-radius: 4px !important;
+		max-width: 49% !important;
+	}
+
+	.kr-installment-number {
+		border-radius: 4px !important;
+		height: 45px !important;
+	}
+
+	.kr-first-installment-delay {
+		border-radius: 4px !important;
+		height: 45px !important;
+	}
+
+	/*** maneja la caja donde se visualiza el formulario de pago ***/
+	#payment>ul>li.wc_payment_method.payment_method_micuentawebstd>div {
+		width: 110% !important;
+		background-color: #fff !important;
+		border-radius: 6px;
+		border: 1px solid #b3b6b5 !important;
+		margin-left: -15px !important;
+		margin-top: 25px !important;
+		box-shadow: 0px 10px 25px rgba(92, 99, 105, .2);
+		padding: 20px !important;
+		background-image: url("https://raw.githubusercontent.com/izipay-pe/Popin-Imagenes/main/logo%20color%20principal.png") !important;
+		height: 415px;
+		width: 360px;
+		background-repeat: no-repeat;
+		background-position: center top 15px;
+		background-size: 160px;
+		padding: 25px !important;
+	}
+
+	.kr-embedded {
+		background-color: #fff !important;
+		border-radius: 6px;
+		border: 1px solid #b3b6b5 !important;
+		margin-top: 60px !important;
+		box-shadow: 0px 10px 25px rgba(92, 99, 105, .2);
+		padding: 20px !important;
+	}
+
+	#micuentawebstd_rest_wrapper>div {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+	}
+}
+
+@media (max-width: 405px) {
+
+	/** manejo de tamaño del banner de tarjetas **/
+	#payment>ul>li.wc_payment_method.payment_method_micuentawebstd>label>img {
+		max-width: 100px !important;
+		max-height: 200px !important;
+	}
+
+
+	/*** maneja la posicion vertical de las etiquetas ***/
+	.kr-field-wrapper {
+		margin-top: 6px !important;
+		margin-left: 10px !important;
+	}
+
+	/*** cuerpo del formulario ***/
+	.kr-pan {
+		margin-top: 14px !important;
+		height: 45px !important;
+		border-radius: 4px !important;
+	}
+
+	.kr-expiry {
+		height: 45px !important;
+		border-radius: 4px !important;
+		max-width: 49% !important;
+	}
+
+	.kr-security-code {
+		height: 45px !important;
+		border-radius: 4px !important;
+		max-width: 49% !important;
+	}
+
+	.kr-installment-number {
+		border-radius: 4px !important;
+		height: 45px !important;
+	}
+
+	.kr-first-installment-delay {
+		border-radius: 4px !important;
+		height: 45px !important;
+	}
+
+	/*** maneja la caja donde se visualiza el formulario de pago ***/
+	#payment>ul>li.wc_payment_method.payment_method_micuentawebstd>div {
+		width: 110% !important;
+		background-color: #fff !important;
+		border-radius: 6px;
+		border: 1px solid #b3b6b5 !important;
+		margin-left: -15px !important;
+		margin-top: 25px !important;
+		box-shadow: 0px 10px 25px rgba(92, 99, 105, .2);
+		padding: 20px !important;
+		background-image: url("https://raw.githubusercontent.com/izipay-pe/Popin-Imagenes/main/logo%20color%20principal.png") !important;
+		height: 405px;
+		width: 360px;
+		background-repeat: no-repeat;
+		background-position: center top 15px;
+		background-size: 160px;
+		padding: 10px !important;
+	}
+
+	.kr-embedded {
+		background-color: #fff !important;
+		border-radius: 6px;
+		border: 1px solid #b3b6b5 !important;
+		margin-top: 70px !important;
+		box-shadow: 0px 10px 25px rgba(92, 99, 105, .2);
+		padding: 15px !important;
+	}
+
+	#micuentawebstd_rest_wrapper>div {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+	}
+}
+
+@media (max-width: 360px) {
+
+	/*** maneja la posicion vertical de las etiquetas ***/
+	.kr-field-wrapper {
+		margin-top: 4px !important;
+		margin-left: 10px !important;
+	}
+
+	/*** maneja la caja donde se visualiza el formulario de pago ***/
+	#payment>ul>li.wc_payment_method.payment_method_micuentawebstd>div {
+		width: 110% !important;
+		background-color: #fff !important;
+		border-radius: 6px;
+		border: 1px solid #b3b6b5 !important;
+		margin-left: -13px !important;
+		box-shadow: 0px 10px 25px rgba(92, 99, 105, .2);
+		height: 340px !important;
+	}
+
+	.kr-embedded {
+		background-color: #fff !important;
+		border-radius: 6px;
+		border: 1px solid #fff !important;
+		margin-top: 55px !important;
+		box-shadow: 0px 10px 25px #fff;
+		padding: 10px !important;
+		width: 100% !important;
+	}
+
+	/*** cuerpo del formulario ***/
+	.kr-pan {
+		height: 40px !important;
+		border-radius: 4px !important;
+	}
+
+	.kr-expiry {
+		height: 40px !important;
+		border-radius: 4px !important;
+		max-width: 49% !important;
+	}
+
+	.kr-security-code {
+		height: 40px !important;
+		border-radius: 4px !important;
+		max-width: 49% !important;
+	}
+
+	.kr-installment-number {
+		border-radius: 4px !important;
+		height: 40px !important;
+	}
+
+	.kr-first-installment-delay {
+		border-radius: 4px !important;
+		height: 40px !important;
+	}
+}
+
+@media (max-width: 280px) {
+
+	/*** maneja la caja donde se visualiza el formulario de pago ***/
+	#payment>ul>li.wc_payment_method.payment_method_micuentawebstd>div {
+		width: 128% !important;
+		background-color: #fff !important;
+		border-radius: 6px;
+		border: 1px solid #b3b6b5 !important;
+		margin-left: -25px !important;
+		box-shadow: 0px 10px 25px rgba(92, 99, 105, .2);
+	}
+
+	.kr-embedded {
+		/*display: none !important;	*/
+		width: 90%;
+		background-color: #fff !important;
+		border-radius: 6px;
+		border: 1px solid #fff !important;
+		margin-top: 70px !important;
+		box-shadow: 0px 10px 25px #fff !important;
+		padding: 0px !important;
+
+
+	}
+
+	/*** maneja la posicion vertical de las etiquetas ***/
+	.kr-field-wrapper {
+		margin-top: 0px !important;
+		margin-left: 10px !important;
+	}
+
+	/*** cuerpo del formulario ***/
+	.kr-pan {
+		margin-top: 14px !important;
+		height: 35px !important;
+		border-radius: 4px !important;
+	}
+
+	.kr-expiry {
+		height: 35px !important;
+		border-radius: 4px !important;
+		max-width: 49% !important;
+	}
+
+	.kr-security-code {
+		height: 35px !important;
+		border-radius: 4px !important;
+		max-width: 49% !important;
+	}
+
+	.kr-installment-number {
+		border-radius: 4px !important;
+		height: 35px !important;
+	}
+
+	.kr-first-installment-delay {
+		border-radius: 4px !important;
+		height: 35px !important;
+	}
+}
+
+

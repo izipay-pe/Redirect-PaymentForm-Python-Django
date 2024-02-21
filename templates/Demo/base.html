@@ -1,0 +1,117 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title> Demo Django </title>
+
+    <link rel="shortcut icon" type="image/png" href="https://iziweb001.s3.amazonaws.com/webresources/img/favicon.ico"/>
+
+    <!-- ===============================================-->
+    <!--    Bootstrap V5-->
+    <!-- ===============================================-->
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+    <!-- ===============================================-->
+    <!--    FontAwesome-->
+    <!-- ===============================================-->
+    <script src="{% static 'fontawesomefree/js/fontawesome.js' %}"></script>
+    <script src="{% static 'fontawesomefree/js/solid.js' %}"></script>
+    <script src="{% static 'fontawesomefree/js/brands.js' %}"></script>
+
+    <!-- ===============================================-->
+    <!--    Select2-->
+    <!-- ===============================================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/journal/bootstrap.min.css"
+    integrity="sha384-QDSPDoVOoSWz2ypaRUidLmLYl4RyoBWI44iA5agn6jHegBxZkNqgm2eHb6yZ5bYs" crossorigin="anonymous" />
+</script>
+
+<!-- Enlace a jQuery (requerido para algunas características de Bootstrap) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Enlace a los archivos JavaScript de Bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    {% block extrastyles %}{% endblock %}
+     <style>
+        body {
+            font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+        }
+
+        a {
+            color: #00B7FF;
+        }
+
+        ul {
+            list-style-type: none; /* Quita el marcador de lista */
+            padding: 0; /* Elimina el espacio de relleno predeterminado */
+            margin: 0; /* Elimina el margen predeterminado */
+        }
+
+        h1 {
+            color: white;
+        }
+
+        hr {
+            height: 0px!important;
+            background-color: #ccc;
+            opacity: 1;
+        }
+
+        p {
+            color: white;
+        }
+
+        label{
+            color: white;
+        }
+
+        pre {
+            background-color: #000000;
+            white-space: pre-wrap;
+            color: white;
+        }
+    </style>
+    {% block extrahead %}{% endblock %}
+</head>
+
+<body style="background-color: #FF2D46;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand mb-1"><img src="https://iziweb001b.s3.amazonaws.com/webresources/img/logo.png" width="80" alt=""></a>
+            <div id="navbarColor01">
+            </div>
+        </div>
+    </nav>
+<!-- ===============================================-->
+<!--    Main Content-->
+<!-- ===============================================-->
+{% csrf_token %}
+<main class="main" id="top">
+    <div class="container-fluid" data-layout="container">
+            <div class="content">
+                {% block body %}{% endblock %}
+            </div>
+    </div>
+</main>
+<!-- ===============================================-->
+<!--    Javascript-->
+<!-- ===============================================-->
+{% block extrajs %}{% endblock %}
+
+</body>
+</html>

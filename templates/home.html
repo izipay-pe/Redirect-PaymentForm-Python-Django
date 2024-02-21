@@ -1,0 +1,42 @@
+{% extends 'Demo/base.html' %}
+{% load static %}
+
+{% block extrastyles %}
+{% endblock %}
+
+{% block body %}
+<section class="container" >
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <h1>Datos del comprador</h1>
+        <hr>
+              <form action="/redirect" method="POST">
+                  {% csrf_token %}
+                  <label for="email" class="form-label ">Email:</label>
+                  <input type="Email" class="form-control" id="email" name="email" required />
+                  <br>
+                  <label for="firstname" class="form-label ">Nombres:</label>
+                  <input type="text" class="form-control" id="firstname" name="firstname" required />
+                  <br>
+                  <label for="firstname" class="form-label ">Apellidos:</label>
+                  <input type="text" class="form-control" id="lastname" name="lastname" required />
+                  <br>
+                  <label for="order" class="form-label ">N° Orden:</label>
+                  <input type="text" class="form-control" id="order" value="{{order}}" name="order" required />
+                  <br>
+                  <label for="amount" class="form-label ">Monto:</label>
+                  <input type="number" class="form-control" id="amount" name="amount" required />
+                  <br>
+                  <button class="btn btn-primary" type="submit">Realizar Pago</button>
+              </form>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block extrajs %}
+    <script>
+    </script>
+{% endblock %}
