@@ -1,8 +1,8 @@
 # Identificador de su tienda
-SHOP_ID = "83041791"
+SHOP_ID = "~~CHANGE_ME_BACKOFFICE_SHOP_ID~~"
 
 # Clave de TEST O PRODUCCIÓN de su tienda.
-TEST_KEY = "zWXg3u8dDHM2aV4U"
+TEST_KEY = "~~CHANGE_ME_BACKOFFICE_TEST_PASSWORD~~"
 PROD_KEY = "~~CHANGE_ME_BACKOFFICE_PROD_PASSWORD~~"
 
 # URL del servidor de Izipay
