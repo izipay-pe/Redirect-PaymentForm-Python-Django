@@ -88,12 +88,13 @@ Ejecutar el proyecto:
   ```
 ## 4. Datos de conexión 
 
-**Nota**: Reemplace **[CHANGE_ME]** con sus credenciales de `API REST` extraídas desde el Back Office Vendedor, ver [Requisitos Previos](#Requisitos_Previos).
+**Nota**: Reemplace **[CHANGE_ME]** con sus credenciales de `API formulario V1, V2 y WP SOAP` extraídas desde el Back Office Vendedor, ver [Requisitos Previos](#Requisitos_Previos).
 
-* Editar en `Keys/keys.py` :
+* Editar en `Demo/configKey.py` :
 <p align="center">
-  <img src="https://i.postimg.cc/k4NvjJJv/Credentials.pngg" alt="Credentials"/>
+  <img src="https://iili.io/JMq3cRj.png" alt="Credentials"/>
 </p>
+
 
 ## 5. Transacción de prueba
 Antes de poner en marcha su pasarela de pago en un entorno de producción, es esencial realizar pruebas para garantizar su correcto funcionamiento. 
@@ -116,7 +117,7 @@ Los datos transmitidos en la IPN se reciben y analizan mediante un script que el
 * Vea el ejemplo de la respuesta IPN con JavaScript. [Aquí](https://github.com/izipay-pe/Server-IPN-JavaScript)
 
 ## 7. Personalización
-Si deseas aplicar cambios específicos en la apariencia de la pasarela de pago, puedes lograrlo mediante la modificación de código CSS. En este enlace [Código CSS - Incrustado](https://github.com/izipay-pe/Personalizacion/tree/main/Formulario%20Incrustado) podrá encontrar nuestro script para un formulario incrustado.
+Si deseas aplicar cambios específicos en la apariencia de la página de pago, puedes lograrlo mediante las opciones de personalización en el Backoffice. En este enlace [Personalización - Página de pago](https://youtu.be/hy877zTjpS0?si=TgSeoqw7qiaQDV25) podrá encontrar un video para guiarlo en la personalización.
 
 ## 8. Consideraciones
 Para obtener más información, echa un vistazo a:
