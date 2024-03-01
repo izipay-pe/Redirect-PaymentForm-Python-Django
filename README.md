@@ -34,7 +34,7 @@ Python, extensión para Visual Studio Code que ofrece soporte completo para el l
 3. Instalar extensión
 
 <p align="center">
-  <img src="https://i.postimg.cc/XYZKRcNJ/Plugin.png" alt="Plugin" width="850"/>
+  <img src="https://i.postimg.cc/XYZKRcNJ/Plugin.png" alt="Plugin" width="750"/>
 </p>
 
 ### Clonar el proyecto:
