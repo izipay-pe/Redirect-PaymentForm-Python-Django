@@ -21,7 +21,7 @@ Este manual está diseñado para ayudarte a comprender el flujo de la integraci�
 ## 2. Requisitos previos
 * Comprender el flujo de comunicación de la pasarela. [Información Aquí](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/javascript/guide/start.html)
 * Extraer credenciales del Back Office Vendedor. [Guía Aquí](https://github.com/izipay-pe/obtener-credenciales-de-conexion)
-* Para este proyecto utilizamos **Python 3.10**
+* Para este proyecto utilizamos **Python 3.12**
 * Para este proyecto utilizamos la herramienta Visual Studio Code.
 > [!NOTE]
 > Tener en cuenta que, para que el desarrollo de tu proyecto, eres libre de emplear tus herramientas preferidas.
