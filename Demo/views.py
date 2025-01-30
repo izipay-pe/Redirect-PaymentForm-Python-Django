@@ -11,12 +11,7 @@ def index(request):
 
 def checkout(request):
     parameters = dataForm(request.POST)
-    
-    #Mostrar datos de pago
-    vads_amount = round(float(parameters["vads_amount"]) / 100, 2) 
-    vads_currency = "PEN" if parameters["vads_currency"] == "604" else "USD"
-
-    return render(request, 'Demo/checkout.html', {'parameters': parameters, "vads_amount": vads_amount, "vads_currency": vads_currency})
+    return render(request, 'Demo/checkout.html', {'parameters': parameters, "amount": request.POST["amount"], "currency": request.POST["currency"]})
 
 @csrf_exempt
 def result(request):
